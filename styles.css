@@ -11,9 +11,6 @@
     color: white;
     font-size: 28px;
     width: 100%;
-    margin: 0%;
-    border: 0%;
-    padding: 0%;
 }
 
 .section3 {
@@ -21,6 +18,20 @@
     display: inline-block;
     width: 100%;
     font-size: 28px;
+}
+
+p {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+h2 {
+    padding-left: 14px;
+}
+
+img {
+    max-width: 100%;
+    padding-left: 14px;
 }
 
 ul {
@@ -71,4 +82,35 @@ li a:hover {
     padding: 15px;
     max-height: 500px;
     overflow: scroll;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+      margin: 1em 2em;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #ucsdlogo {
+        max-width: 75%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .grid-container {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        padding: 20px;
+        column-gap: 25px;
+        row-gap: 25px;
+    }
 }
